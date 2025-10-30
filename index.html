@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário da Débora</title>
+    <style>
+        /*Cabeçalho*/
+        h1 {
+        animation: colorChange 5s linear infinite;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #fb589e; 
+            }
+            25% {
+                color: #4dff00;
+            }
+            50% {
+                color: #32cdca; 
+            }
+            75% {
+                color: #c417f4;
+            }
+            100% {
+                color: #f6be24;
+            }
+        }
+
+        .fotos galeria-container galeria-slides fade img{
+            width: 30rem;
+            height: 25rem;
+            margin-left: 22rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 2rem;
+            border: 2px solid #730990;
+        }
+        body {
+      margin: 0;
+      background: linear-gradient(270deg, #c417f4, #fb589e, #32cdca, #f6be24);
+      background-size: 800% 800%;
+      animation: bgAnimation 15s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      color: #3a0044;
+      overflow-x: hidden;
+    }
+
+    @keyframes bgAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Cabeçalho animado */
+    h1 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      animation: colorChange 5s linear infinite;
+      margin: 1.5rem auto;
+      width: fit-content;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+
+    @keyframes colorChange {
+      0% { color: #fb589e; }
+      25% { color: #4dff00; }
+      50% { color: #32cdca; }
+      75% { color: #c417f4; }
+      100% { color: #f6be24; }
+    }
+
+    /* Blocos de texto */
+    .texto {
+      margin: 2rem;
+      padding: 2rem;
+      background-color: #ffffffd4;
+      border-radius: 1rem;
+      font-size: 1.3rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    /* Galerias */
+    .fotos img {
+      width: 28rem;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 1.5rem;
+      border: 3px solid #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .fotos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Fade suave nos blocos */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Botão surpresa */
+    button {
+      background: #ffffff;
+      color: #c417f4;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: block;
+      margin: 2rem auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    }
+
+    #mensagem {
+      display: none;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      background-color: #ffffffd4;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* Corações */
+    .heart {
+      position: fixed;
+      top: -10px;
+      font-size: 2rem;
+      animation: fall linear forwards;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .texto {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .fotos img {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 0.8rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  #mensagem {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .texto {
+    font-size: 0.95rem;
+  }
+
+  .fotos img {
+    width: 95%;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+</style>
+    
+</head>
+<body style="background-color: #c417f4;">
+    
+        <h1 style="text-align: center; background-color: #ffffff; border-radius: 1rem;">Feliz aniversário Debi!!</h1>
+    <div >
+        <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+            <p class="texto">
+                Oi Debi, tudo certo? <br> 
+                17 anos hein, ta ficando coroa, é louco pensar que a gente se conhece a pouco tempo, tipo, parece que somos amigas a tanto tempo que eu não consigo me imaginar sem ser sua amiga, então se você me largar, não estranhe os barulhos estranhos na sua casa. <br>
+                Brincadeiras à parte, isso é só pra frizar que eu amo a nossa amizade, e realmente não saberia o que fazer sem você, sem os planos (que nunca concluimos), sem os surtos das fanfics (temos que voltar a ler), sem as vezes que saímos (é muito legal), basicamente, sem ter você na minha vida.
+            </p>
+        </div>
+        <div class="fotos">
+            <div class="galeria-container" id="galeria1">
+            <div class="galeria-slides fade"><img src="barbie1.jpg" alt="Foto 1"></div>
+            <div class="galeria-slides fade"><img src="barbie2.jpg" alt="Foto 2"></div>
+        </div>
+        <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+            <p class="texto">
+                Você chegou para mim do nada, e eu realmente não fazia ideia de que ficariamos tão próximas, no iniciozinho da amizade eu achei que iria acabar quando a escola acabasse, e olha a gente aqui, procurando qualquer coisa para ficarmos juntas, qualquer situação, mesmo em escolas diferentes.  <br>
+                Mas é, eu fico bem feliz de saber que agora estmaos indo para o introcomp ficamos mais tempo juntas (vmaos procurar outro pra quando esse acabar - pelo menos eu amaria), isso é bem legal, sei la. 
+            </p>
+        </div>
+        <div class="fotos">
+            <div class="galeria-container" id="galeria3">
+                <div class="galeria-slides fade"><img src="introcomp1.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp2.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp3.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp4.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp5.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp6.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="introcomp7.jpg" alt="Foto 1"></div>
+            </div>
+            <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+                <p class="texto">
+                    Olha que estudiosas, ignoramos a parte de não sabermos mexer no while e for... 💀💀<br>
+                </p>
+            </div>
+        <div class="fotos">
+
+            <div class="galeria-container" id="galeria4">
+                <div class="galeria-slides fade"><img src="Sesi1.jpg" alt="Foto 1"></div>
+                <div class="galeria-slides fade"><img src="sesi2.jpg" alt="Foto 2"></div>
+                <div class="galeria-slides fade"><img src="sesi3.jpg" alt="Foto 3"></div>
+                <div class="galeria-slides fade"><img src="sesi4.jpg" alt="Foto 4"></div>
+                <div class="galeria-slides fade"><img src="sesi5.jpg" alt="Foto 4"></div>
+                <div class="galeria-slides fade"><img src="sesi6.jpg" alt="Foto 5"></div>
+                <div class="galeria-slides fade"><img src="sesi7.jpg" alt="Foto 6"></div>
+                <div class="galeria-slides fade"><img src="sesi8.jpg" alt="Foto 7"></div>
+                <div class="galeria-slides fade"><img src="sesi9.jpg" alt="Foto 8"></div>
+                <div class="galeria-slides fade"><img src="sesi10.jpg" alt="Foto 9"></div>
+                <div class="galeria-slides fade"><img src="sesi11.jpg" alt="Foto 10"></div>
+                <div class="galeria-slides fade"><img src="sesi12.jpg" alt="Foto 11"></div>
+            </div>
+            <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+            <p class="texto"
+            >
+                Aaaaaaah que saaudade do sesi 😭😭😭 <br>
+                Do sesi vírgula né, da turma toda no sesi
+            </p>
+            </div>
+        </div>
+        <div class="fotos">
+            <div class="galeria-container" id="galeria5">
+            <div class="galeria-slides fade"><img src="desenho1.jpg" alt="Foto 1"></div>
+            <div class="galeria-slides fade"><img src="desenho2.jpg" alt="Foto 2"></div>
+            
+        </div>
+        <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+            <p class="texto">
+                Lembra quando a gente desenhava na mão? <br>
+                Eramos tatuadoras profissionais 💅💅.
+            </p>
+        </div>
+        <div style="margin: 2rem; padding: 2rem; background-color: #ffffffd4; border-radius: 1rem; font-size: 1.3rem;">
+            <p class="texto">
+                bom, vivemos vários momentos juntas, e eu definitivamente quero viver muitos mais, você foi e é a estrela que brilha para me alegrar, eu não consigo fica mal por muito tempo quando estou com Você! <br>
+                Nossa, isso foi muito gay <br>
+                Mas a tudo bem, porque eu posso ser assim com você. E assim, quero te falar, anjo, que eu e amo muito.
+                Serio, eu te amo muito mesmo, você é a melhor amoga mais perfeita pra mim, então eu espero ser pra você também 💖💖.
+            </p>
+        </div>
+         <button onclick="mostrarMensagem()">💌 Clique para uma mensagem especial 💌</button>
+         <div id="mensagem">
+            <p>💖 Você é uma das melhores pessoas que já conheci, Debi. Te amo de verdade, e quero estar do seu lado em todos os momentos! 💖</p>
+        </div>
+</body>
+<script>
+function iniciarGaleria(id) {
+  const slides = document.querySelectorAll(`#${id} .galeria-slides`);
+  if (slides.length === 0) return;
+  let index = 0;
+  function mostrarSlides() {
+    slides.forEach(s => s.style.display = "none");
+    index = (index + 1 > slides.length) ? 1 : index + 1;
+    slides[index - 1].style.display = "block";
+    setTimeout(mostrarSlides, 3000);
+  }
+  mostrarSlides();
+}
+
+// Inicia todas as galerias automaticamente
+document.querySelectorAll(".galeria-container").forEach(div => {
+  iniciarGaleria(div.id);
+});
+</script>
+ <script>
+    // Função dos corações caindo
+    const hearts = () => {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.textContent = "✨";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    };
+    setInterval(hearts, 400);
+
+    // Mostrar mensagem surpresa
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+  </script>
+</html>
